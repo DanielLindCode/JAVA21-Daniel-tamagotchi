@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#game-container {
+  margin: 100px auto auto auto;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 100px;
+  grid-template-rows: 50px 200px 50px;
+}
+#setup-container {
+  border: solid 1px black;
+  background-color: rgb(57, 205, 74);
+}
+
+#name-container {
+  padding-top: 5px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: aqua;
+}
+#img-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background-color: rgb(44, 79, 79);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img-container img {
+  background-color: rgb(151, 181, 181);
+}
+#btn-container {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  background-color: blue;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#stats-container {
+  padding: 15px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background-color: red;
+}
+
+#stats-container h4 {
+  padding: 2px;
+}
+
+#petImg {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
